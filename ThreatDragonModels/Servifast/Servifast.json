@@ -31,8 +31,8 @@
                 "text": "Autenticación"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -128,12 +128,67 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "b31aa4cf-9a17-4c20-8355-4f2e9989e744",
+                  "title": "Expedition",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Tampering / Manipulación",
+                  "description": "See OWASP Automated Threat #6:\nUsar la velocidad para violar suposiciones explícitas o implícitas sobre el uso normal de la aplicación con el fin de obtener una ventaja individual injusta.",
+                  "mitigation": "Las defensas incluyen la aplicación de flujos de trabajo de comportamiento y medidas contra la automatización.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                },
+                {
+                  "id": "b31aa4cf-9a17-4c20-8355-4f2e9989e744",
+                  "title": "Vulnerability scanning",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure / Brecha de información",
+                  "description": "See OWASP Automated Threat #14:\nEnumeración y examen sistemático para encontrar debilidades y puntos donde podría existir una vulnerabilidad de seguridad.",
+                  "mitigation": "La defensa incluye implementar medidas contra la automatización.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                },
+                {
+                  "id": "b31aa4cf-9a17-4c20-8355-4f2e9989e744",
+                  "title": "Denial of Service",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Elevation of privilege / Elevación de privilegios",
+                  "description": "See OWASP Automated Threat #15:\nEl uso puede parecer legítimo, pero conduce al agotamiento de recursos.",
+                  "mitigation": "Mitigación o prevención, como implementar retrocesos, gestión de recursos y evitar bloqueos forzados.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 1
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -380,13 +435,6 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1300,6 +1348,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Belén Sarmiento, Mateo Once",
-    "threatTop": 3
+    "threatTop": 6
   }
 }
