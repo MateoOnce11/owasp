@@ -1256,6 +1256,7 @@
             "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
+            "zIndex": 12,
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
@@ -1285,8 +1286,7 @@
                 "x": 782,
                 "y": 382
               }
-            ],
-            "zIndex": 12
+            ]
           }
         ]
       }
