@@ -205,11 +205,13 @@
                 "text": "Base de datos"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -305,13 +307,66 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "c0526c13-cfdf-416c-86c5-a947d80342c1",
+                  "title": "Scraping",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure / Brecha de información",
+                  "description": "See OWASP Automated Threat #11:\nRecopilación de datos accesibles y/o resultados procesados de la aplicación.",
+                  "mitigation": "\nDetectar cuentas falsas o comprometidas, asegurar que la información solo sea accesible con autenticación y autorización.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": ""
+                },
+                {
+                  "id": "c0526c13-cfdf-416c-86c5-a947d80342c1",
+                  "title": "Skewing",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Elevation of privilege / Elevación de privilegios",
+                  "description": "See OWASP Automated Threat #16:\nClics automáticos repetidos o solicitudes o envíos de contenido, que afectan métricas basadas en la aplicación, como contadores y medidas de frecuencia y/o tasa.",
+                  "mitigation": "Las defensas incluyen el control de la frecuencia de interacción o la aplicación adecuada de una acción única y exclusiva.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": ""
+                },
+                {
+                  "id": "c0526c13-cfdf-416c-86c5-a947d80342c1",
+                  "title": "Spamming",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Elevation of privilege / Elevación de privilegios",
+                  "description": "See OWASP Automated Threat #17:\nAlmacenar contenido malicioso como malware, distribución de Iframes, fotografías y videos, anuncios, spam de referencias y código de seguimiento/vigilancia.",
+                  "mitigation": "Las defensas incluyen detectar código malicioso incrustado, controlar la frecuencia de interacción y aplicar una acción única y exclusiva.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -328,11 +383,13 @@
                 "text": "Servidor de \nalmacenamiento"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -428,13 +485,59 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "d31eb732-b543-4480-9ff4-c40c461b84fe",
+                  "title": "Scraping",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure / Brecha de información",
+                  "description": "See OWASP Automated Threat #11:\nRecopilación de datos accesibles y/o resultados procesados de la aplicación.",
+                  "mitigation": "Detectar cuentas falsas o comprometidas, asegurar que la información solo sea accesible con autenticación y autorización.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
+                },
+                {
+                  "id": "d31eb732-b543-4480-9ff4-c40c461b84fe",
+                  "title": "Skewing",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Elevation of privilege / Elevación de privilegios",
+                  "description": "See OWASP Automated Threat #16:\nClics automáticos repetidos o solicitudes o envíos de contenido, que afectan métricas basadas en la aplicación, como contadores y medidas de frecuencia y/o tasa.",
+                  "mitigation": "Las defensas incluyen el control de la frecuencia de interacción o la aplicación adecuada de una acción única y exclusiva.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
+                },
+                {
+                  "id": "d31eb732-b543-4480-9ff4-c40c461b84fe",
+                  "title": "Spamming",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Elevation of privilege / Elevación de privilegios",
+                  "description": "See OWASP Automated Threat #17:\nAlmacenar contenido malicioso como malware, distribución de Iframes, fotografías y videos, anuncios, spam de referencias y código de seguimiento/vigilancia.",
+                  "mitigation": "Las defensas incluyen detectar código malicioso incrustado, controlar la frecuencia de interacción y aplicar una acción única y exclusiva.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -451,8 +554,8 @@
                 "text": "Servicios"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -548,12 +651,60 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "e162703f-9626-415c-a4c4-3aa808189581",
+                  "title": "Expedition",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Tampering / Manipulación",
+                  "description": "See OWASP Automated Threat #6:\nUsar la velocidad para violar suposiciones explícitas o implícitas sobre el uso normal de la aplicación para obtener una ventaja individual injusta.",
+                  "mitigation": "Las defensas incluyen la aplicación de flujos de trabajo de comportamiento y medidas anti-automatización.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                },
+                {
+                  "id": "e162703f-9626-415c-a4c4-3aa808189581",
+                  "title": "Vulnerability scanning",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure / Brecha de información",
+                  "description": "See OWASP Automated Threat #14:\nEnumeración y examen sistemático para encontrar debilidades y puntos donde podría existir una vulnerabilidad de seguridad.",
+                  "mitigation": "La defensa incluye implementar medidas contra la automatización.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                },
+                {
+                  "id": "e162703f-9626-415c-a4c4-3aa808189581",
+                  "title": "Denial of Service",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Elevation of privilege / Elevación de privilegios",
+                  "description": "See OWASP Automated Threat #15:\nEl uso puede parecer legítimo, pero conduce al agotamiento de recursos.",
+                  "mitigation": "Mitigación o prevención, como implementar retrocesos, gestión de recursos y evitar bloqueos forzados.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 1
+              }
             }
           },
           {
@@ -570,8 +721,8 @@
                 "text": "Servidor web"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -667,12 +818,60 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "cdc6ace1-ffe8-4e02-98ea-cc25b744eac2",
+                  "title": "Expedition",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Tampering / Manipulación",
+                  "description": "See OWASP Automated Threat #6:\nUsar la velocidad para violar suposiciones explícitas o implícitas sobre el uso normal de la aplicación para obtener una ventaja individual injusta.",
+                  "mitigation": "Las defensas incluyen la aplicación de flujos de trabajo de comportamiento y medidas anti-automatización.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                },
+                {
+                  "id": "cdc6ace1-ffe8-4e02-98ea-cc25b744eac2",
+                  "title": "Vulnerability scanning",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure / Brecha de información",
+                  "description": "See OWASP Automated Threat #14:\nEnumeración y examen sistemático para encontrar debilidades y puntos donde podría existir una vulnerabilidad de seguridad.",
+                  "mitigation": "La defensa incluye implementar medidas contra la automatización",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                },
+                {
+                  "id": "cdc6ace1-ffe8-4e02-98ea-cc25b744eac2",
+                  "title": "Denial of Service",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Elevation of privilege / Elevación de privilegios",
+                  "description": "See OWASP Automated Threat #15:\nEl uso puede parecer legítimo, pero conduce al agotamiento de recursos.",
+                  "mitigation": "Mitigación o prevención, como implementar retrocesos, gestión de recursos y evitar bloqueos forzados.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 1
+              }
             }
           },
           {
@@ -1348,6 +1547,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Belén Sarmiento, Mateo Once",
-    "threatTop": 6
+    "threatTop": 18
   }
 }
