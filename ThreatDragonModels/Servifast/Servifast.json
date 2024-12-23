@@ -19,7 +19,7 @@
         "cells": [
           {
             "position": {
-              "x": 410,
+              "x": 450,
               "y": -70
             },
             "size": {
@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "3ee4bf66-5435-4a56-acf3-10c88270def4",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Autenticación",
@@ -138,8 +138,8 @@
           },
           {
             "position": {
-              "x": 746,
-              "y": 40
+              "x": 826,
+              "y": 50
             },
             "size": {
               "width": 120,
@@ -160,6 +160,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -243,7 +244,6 @@
               ]
             },
             "id": "5a5f3995-076c-4228-ab84-80c690583911",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
               "name": "Base de datos",
@@ -261,8 +261,8 @@
           },
           {
             "position": {
-              "x": 746,
-              "y": 240
+              "x": 826,
+              "y": 223
             },
             "size": {
               "width": 120,
@@ -270,7 +270,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Servidor de almacenamiento"
+                "text": "Servidor de \nalmacenamiento"
               },
               "topLine": {
                 "strokeWidth": 1.5,
@@ -283,6 +283,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -368,7 +369,7 @@
             "id": "6adb906a-8bd4-4fc3-9ba1-2ccd763574c6",
             "data": {
               "type": "tm.Store",
-              "name": "Servidor de almacenamiento",
+              "name": "Servidor de \nalmacenamiento",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -379,12 +380,11 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
-            },
-            "zIndex": 5
+            }
           },
           {
             "position": {
-              "x": 410,
+              "x": 450,
               "y": 320
             },
             "size": {
@@ -403,6 +403,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -498,12 +499,11 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 6
+            }
           },
           {
             "position": {
-              "x": 410,
+              "x": 450,
               "y": 133
             },
             "size": {
@@ -522,6 +522,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 7,
             "ports": {
               "groups": {
                 "top": {
@@ -617,8 +618,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 7
+            }
           },
           {
             "shape": "flow",
@@ -663,8 +663,8 @@
             },
             "vertices": [
               {
-                "x": 500,
-                "y": 80
+                "x": 550,
+                "y": 70
               }
             ]
           },
@@ -711,8 +711,8 @@
             },
             "vertices": [
               {
-                "x": 400,
-                "y": 80
+                "x": 440,
+                "y": 70
               }
             ]
           },
@@ -807,8 +807,8 @@
             },
             "vertices": [
               {
-                "x": 320,
-                "y": 120
+                "x": 300,
+                "y": 140
               }
             ]
           },
@@ -832,19 +832,19 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Response",
+              "name": "Request",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": true,
-              "isPublicNetwork": false,
-              "protocol": "",
+              "isPublicNetwork": true,
+              "protocol": "HTTPS",
               "threats": []
             },
             "labels": [
-              "Response"
+              "Request"
             ],
             "id": "0226d2f8-839b-43a2-a733-01693a6edea3",
             "source": {
@@ -887,8 +887,8 @@
               "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": true,
-              "isPublicNetwork": false,
-              "protocol": "",
+              "isPublicNetwork": true,
+              "protocol": "HTTPS",
               "threats": []
             },
             "labels": [
@@ -903,8 +903,8 @@
             },
             "vertices": [
               {
-                "x": 620,
-                "y": 150
+                "x": 680,
+                "y": 140
               }
             ]
           },
@@ -999,56 +999,8 @@
             },
             "vertices": [
               {
-                "x": 650,
-                "y": 260
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Información \nservicios",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Información \nservicios"
-            ],
-            "id": "a03d15d4-a905-447e-9897-bd03046f4282",
-            "source": {
-              "cell": "4fe6516c-dbe8-4a7c-833e-7f8dfd5dbdbe"
-            },
-            "target": {
-              "cell": "83f90ff4-d7d6-451d-bb33-0ba33054e65a"
-            },
-            "vertices": [
-              {
-                "x": 400,
-                "y": 270
+                "x": 670,
+                "y": 253
               }
             ]
           },
@@ -1095,8 +1047,92 @@
             },
             "vertices": [
               {
-                "x": 500,
+                "x": 540,
+                "y": 280
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Información \nservicios",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Información \nservicios"
+            ],
+            "id": "a03d15d4-a905-447e-9897-bd03046f4282",
+            "source": {
+              "cell": "4fe6516c-dbe8-4a7c-833e-7f8dfd5dbdbe"
+            },
+            "target": {
+              "cell": "83f90ff4-d7d6-451d-bb33-0ba33054e65a"
+            },
+            "vertices": [
+              {
+                "x": 440,
                 "y": 270
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Internet",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Internet"
+            ],
+            "id": "5ef48caf-fbfc-439d-ad57-8e01e2af6277",
+            "source": {
+              "x": 320,
+              "y": -160
+            },
+            "target": {
+              "x": 330,
+              "y": 510
+            },
+            "vertices": [
+              {
+                "x": 290,
+                "y": -10
+              },
+              {
+                "x": 290,
+                "y": 370
               }
             ]
           },
@@ -1121,6 +1157,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -1204,7 +1241,6 @@
               ]
             },
             "id": "3b71bd42-e6a1-4fa6-af3b-8f0185f5d7e8",
-            "zIndex": 11,
             "data": {
               "type": "tm.Actor",
               "name": "Cliente(Navegador web)",
@@ -1215,6 +1251,42 @@
               "providesAuthentication": false,
               "threats": []
             }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Internet",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Internet"
+            ],
+            "id": "cbd6cbd5-b7ff-43b6-82ed-5b8254b84498",
+            "source": {
+              "x": 750,
+              "y": -160
+            },
+            "target": {
+              "x": 730,
+              "y": 510
+            },
+            "vertices": [
+              {
+                "x": 782,
+                "y": 2
+              },
+              {
+                "x": 782,
+                "y": 382
+              }
+            ],
+            "zIndex": 12
           }
         ]
       }
