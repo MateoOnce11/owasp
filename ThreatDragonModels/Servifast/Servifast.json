@@ -380,6 +380,13 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1293,6 +1300,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Belén Sarmiento, Mateo Once",
-    "threatTop": 0
+    "threatTop": 3
   }
 }
