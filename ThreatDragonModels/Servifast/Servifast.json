@@ -1354,12 +1354,6 @@
             "target": {
               "cell": "6adb906a-8bd4-4fc3-9ba1-2ccd763574c6"
             },
-            "vertices": [
-              {
-                "x": 690,
-                "y": 210
-              }
-            ],
             "tools": {
               "items": [
                 "boundary",
@@ -1369,7 +1363,13 @@
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "vertices": [
+              {
+                "x": 690,
+                "y": 210
+              }
+            ]
           },
           {
             "shape": "flow",
