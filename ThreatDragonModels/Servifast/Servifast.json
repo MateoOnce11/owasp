@@ -182,13 +182,6 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 1
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -974,7 +967,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -994,12 +988,44 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": true,
               "isPublicNetwork": true,
               "protocol": "HTTPS",
-              "threats": []
+              "threats": [
+                {
+                  "id": "3a5d9fbc-e421-4f89-8d90-ab97e54746e2",
+                  "title": "Vulnerable transport protocol",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "Los protocolos de transporte más antiguos son vulnerables y tienen vulnerabilidades conocidas.",
+                  "mitigation": "\nUtiliza criptografía y protocolos de transporte actualizados.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 21,
+                  "score": ""
+                },
+                {
+                  "id": "3a5d9fbc-e421-4f89-8d90-ab97e54746e2",
+                  "title": "Fingerprinting",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "See OWASP Automated Threat #4:\nSe envían solicitudes específicas a la aplicación para obtener información y así perfilarla.",
+                  "mitigation": "\nLa defensa incluye restringir qué información se proporciona, por ejemplo, números de versión y detalles de paquetes.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 21,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 2,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Response"
@@ -1016,7 +1042,17 @@
                 "x": 320,
                 "y": 240
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -1547,6 +1583,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Belén Sarmiento, Mateo Once",
-    "threatTop": 18
+    "threatTop": 22
   }
 }
