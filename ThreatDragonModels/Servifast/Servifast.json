@@ -353,13 +353,6 @@
                 "informationDisclosure": 1,
                 "denialOfService": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1042,23 +1035,14 @@
                 "x": 320,
                 "y": 240
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1078,12 +1062,44 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": true,
               "isPublicNetwork": true,
-              "protocol": "",
-              "threats": []
+              "protocol": "HTTPS",
+              "threats": [
+                {
+                  "id": "77df9dd7-d36e-45af-8c02-20b856c3a639",
+                  "title": "Vulnerable transport protocol",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "\nLos protocolos de transporte más antiguos son vulnerables y tienen vulnerabilidades conocidas.",
+                  "mitigation": "\nUtiliza criptografía y protocolos de transporte actualizados.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 23,
+                  "score": ""
+                },
+                {
+                  "id": "77df9dd7-d36e-45af-8c02-20b856c3a639",
+                  "title": "Fingerprinting",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "See OWASP Automated Threat #4:\nSe envían solicitudes específicas a la aplicación para obtener información y así perfilarla.",
+                  "mitigation": "\nLa defensa incluye restringir qué información se proporciona, por ejemplo, números de versión y detalles de paquetes.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 23,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 2,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Request\n"
@@ -1106,7 +1122,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1126,12 +1143,44 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": true,
               "isPublicNetwork": true,
               "protocol": "HTTPS",
-              "threats": []
+              "threats": [
+                {
+                  "id": "39567bbe-efe9-4318-ac85-b2ec0580512e",
+                  "title": "Vulnerable transport protocol",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "Los protocolos de transporte más antiguos son vulnerables y tienen vulnerabilidades conocidas.",
+                  "mitigation": "Utiliza criptografía y protocolos de transporte actualizados.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 25,
+                  "score": ""
+                },
+                {
+                  "id": "39567bbe-efe9-4318-ac85-b2ec0580512e",
+                  "title": "Fingerprinting",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "See OWASP Automated Threat #4:\n\nSe envían solicitudes específicas a la aplicación para obtener información y así perfilarla.",
+                  "mitigation": "La defensa incluye restringir qué información se proporciona, por ejemplo, números de versión y detalles de paquetes.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 25,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 2,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Request"
@@ -1154,7 +1203,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1174,12 +1224,44 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": true,
               "isPublicNetwork": true,
               "protocol": "HTTPS",
-              "threats": []
+              "threats": [
+                {
+                  "id": "6920af53-d775-4e8f-a6a3-7f4776df2622",
+                  "title": "Vulnerable transport protocol",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "Los protocolos de transporte más antiguos son vulnerables y tienen vulnerabilidades conocidas.",
+                  "mitigation": "\nUtiliza criptografía y protocolos de transporte actualizados.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 27,
+                  "score": ""
+                },
+                {
+                  "id": "6920af53-d775-4e8f-a6a3-7f4776df2622",
+                  "title": "Fingerprinting",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "See OWASP Automated Threat #4:\n\nSe envían solicitudes específicas a la aplicación para obtener información y así perfilarla.",
+                  "mitigation": "\nLa defensa incluye restringir qué información se proporciona, por ejemplo, números de versión y detalles de paquetes.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 27,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 2,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Response"
@@ -1202,7 +1284,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1222,12 +1305,44 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": true,
               "isPublicNetwork": true,
               "protocol": "HTTPS",
-              "threats": []
+              "threats": [
+                {
+                  "id": "20506c72-751c-4d32-8441-c9fb45de6967",
+                  "title": "Vulnerable transport protocol",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "\nLos protocolos de transporte más antiguos son vulnerables y tienen vulnerabilidades conocidas.",
+                  "mitigation": "Utiliza criptografía y protocolos de transporte actualizados.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 31,
+                  "score": ""
+                },
+                {
+                  "id": "20506c72-751c-4d32-8441-c9fb45de6967",
+                  "title": "Fingerprinting",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "See OWASP Automated Threat #4:\n\nSe envían solicitudes específicas a la aplicación para obtener información y así perfilarla.",
+                  "mitigation": "\nLa defensa incluye restringir qué información se proporciona, por ejemplo, números de versión y detalles de paquetes.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 31,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 2,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Request"
@@ -1244,13 +1359,24 @@
                 "x": 690,
                 "y": 210
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1270,12 +1396,44 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": true,
               "isPublicNetwork": true,
               "protocol": "HTTPS",
-              "threats": []
+              "threats": [
+                {
+                  "id": "66298c94-2c7a-4dd4-b04c-d544d3581524",
+                  "title": "Vulnerable transport protocol",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "\nLos protocolos de transporte más antiguos son vulnerables y tienen vulnerabilidades conocidas.",
+                  "mitigation": "\nUtiliza criptografía y protocolos de transporte actualizados.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 29,
+                  "score": ""
+                },
+                {
+                  "id": "66298c94-2c7a-4dd4-b04c-d544d3581524",
+                  "title": "Fingerprinting",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "See OWASP Automated Threat #4:\n\nSe envían solicitudes específicas a la aplicación para obtener información y así perfilarla.",
+                  "mitigation": "\nLa defensa incluye restringir qué información se proporciona, por ejemplo, números de versión y detalles de paquetes.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 29,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 2,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Response"
@@ -1583,6 +1741,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Belén Sarmiento, Mateo Once",
-    "threatTop": 22
+    "threatTop": 32
   }
 }
